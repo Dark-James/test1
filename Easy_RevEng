@@ -1,0 +1,10 @@
+function redirect(req, res) {
+    const URL = req.query.url; // user-controlled input
+    res.redirect(url);
+ }
+ 
+ function setLocationHeader(req, res) {
+    const url = req.query.url; // user-controlled input
+    res.location(url);
+    res.sendStatus(302);
+ }
